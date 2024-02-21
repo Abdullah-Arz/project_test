@@ -1,0 +1,47 @@
+.userlistComp_tbody {
+  margin-top: 4%;
+}
+
+.userlistComp_td {
+  text-align: center;
+  cursor: pointer;
+}
+
+.userlistComp_img {
+  width: 10%;
+  height: 10%;
+  border-radius: 100%;
+}
+
+td {
+  padding: 8px;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.userlistComp-container {
+  display: flex;
+  align-items: start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+
+.userlistComp {
+  text-align: start;
+}
+
+.userlistComp-space {
+  margin-top: 10px;
+}
+
+.inputSearchComp {
+  margin-bottom: 20px;
+}

@@ -4,20 +4,21 @@ export const reduxSlice = createSlice({
   name: 'redux',
   initialState: {
     value: 0,
+    apidata:[],
+    searchuser:[]
   },
   reducers: {
-    increment: (state) => {
-      state.value += 1
+    getUserdata: (state,action) => {
+      state.apidata = action.payload
+      // console.log('redux userlist ----- ',action.payload)
     },
-    decrement: (state) => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
-    },
+    searchUserdata: (state,action) => {
+      state.searchuser = action.payload
+      // console.log('redux userlist ----- ',action.payload)
+    }
   },
 })
 
-export const { increment, decrement, incrementByAmount } = reduxSlice.actions
+export const { getUserdata,searchUserdata } = reduxSlice.actions
 
 export default reduxSlice.reducer
